@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cultura Rural e Urbana</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-white text-gray-800 transition-colors duration-300" id="body">
+  <!-- Header -->
+  <header class="w-full px-6 py-4 flex items-center justify-between border-b relative">
+    <h1 class="text-xl font-bold text-orange-600">CULTURA RURAL E URBANA</h1>
+
+    <div class="flex items-center gap-4">
+      <button id="toggle-theme" class="text-orange-600 font-semibold">🌓</button>
+      <button id="increase-text" class="text-orange-600 font-semibold text-xl">A+</button>
+      <button id="menu-btn" class="block md:hidden text-orange-600 focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Menu -->
+    <nav id="menu" class="hidden md:flex flex-col md:flex-row absolute md:static bg-white top-16 left-0 w-full md:w-auto md:space-x-4 shadow-md md:shadow-none z-10">
+      <a href="#hero" class="block px-6 py-2 text-sm font-semibold hover:text-orange-500">Contexto Inicial</a>
+      <a href="#destinos" class="block px-6 py-2 text-sm font-semibold hover:text-orange-500">Imagens</a>
+      <a href="#historias" class="block px-6 py-2 text-sm font-semibold hover:text-orange-500">Semelhanças e Diferenças</a>
+      <a href="#contato" class="block px-6 py-2 text-sm font-semibold hover:text-orange-500">Contato</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section id="hero" class="px-6 py-8 grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+    <div>
+      <h2 class="text-3xl md:text-4xl font-bold leading-tight mb-4">
+        Explorando a Cultura <span class="text-orange-600">Rural</span> e a Cultura <span class="text-orange-600">Urbana</span>
+      </h2>
+      <p class="text-gray-600 mb-4">
+        Nesse site, você conhecerá as diferenças e semelhanças de cada uma, além de observar uma galeria
+        de fotos que explora as diferentes culturas.
+      </p>
+      <p>
+        O campo é caracterizado por uma comunidade rural, geralmente centrada na agricultura, com uma forte conexão com a terra e uma estrutura social mais tradicional. A cidade, por sua vez, é um espaço urbano, caracterizado por uma comunidade diversificada, economia mais complexa e uma estrutura social mais fluida.
+      </p>
+    </div>
+    <div>
+      <img src="construir-vista-do-campo_1112-634.avif" alt="Imagem representando cultura rural ou urbana" class="rounded-xl w-full h-64 object-cover shadow-md" />
+    </div>
+  </section>
+
+  <!-- Galeria de Imagens -->
+  <section id="destinos" class="px-6 py-8">
+    <h3 class="text-2xl font-semibold mb-4">Imagens</h3>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+      <div class="bg-gray-100 rounded-xl overflow-hidden h-40">
+        <img src="pexels-photo-14092191.jpeg" class="w-full h-full object-cover">
+      </div>
+      <div class="bg-gray-100 rounded-xl overflow-hidden h-40">
+        <img src="pexels-photo-9792176.jpeg" class="w-full h-full object-cover">
+      </div>
+      <div class="bg-gray-100 rounded-xl overflow-hidden h-40">
+        <img src="images.jpg" class="w-full h-full object-cover">
+      </div>
+      <div class="bg-gray-100 rounded-xl overflow-hidden h-40">
+        <img src="6349252314_62e1f35e5b_b.jpg" class="w-full h-full object-cover">
+      </div>
+    </div>
+  </section>
+
+  <!-- Semelhanças e Diferenças -->
+  <section id="historias" class="px-6 py-8 space-y-10">
+    <div>
+      <h3 class="text-2xl font-semibold mb-4">Semelhanças:</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="flex gap-4">
+          <div>
+            <h4 class="font-semibold">Interdependência:</h4>
+            <p class="text-sm text-gray-600">A produção rural é crucial para o abastecimento da cidade, enquanto as cidades oferecem oportunidades econômicas e tecnologias para o campo, demonstrando uma relação de troca e complementaridade.</p>
+          </div>
+        </div>
+        <div class="flex gap-4">
+          <div>
+            <h4 class="font-semibold">Interação Social:</h4>
+            <p class="text-sm text-gray-600">A dinâmica social e cultural em ambos os espaços é influenciada pela interação entre as pessoas, seja em eventos sociais, atividades comunitárias ou no dia a dia.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <h3 class="text-2xl font-semibold mb-4">Diferenças:</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="flex gap-4">
+          <div>
+            <h4 class="font-semibold">Ritmo de Vida e Estilo de Vida:</h4>
+            <p class="text-sm text-gray-600">Rural: Geralmente mais lento e menos estressante, com o tempo dedicado a atividades agrícolas e familiares.<br>Urbano: Mais rápido e frenético, com foco em trabalho, transporte e atividades urbanas.</p>
+          </div>
+        </div>
+        <div class="flex gap-4">
+          <div>
+            <h4 class="font-semibold">Estrutura Social:</h4>
+            <p class="text-sm text-gray-600">Rural: Comunidades mais fechadas e tradicionais, com forte ligação entre as famílias e a terra.<br>Urbano: Comunidades mais diversificadas, com grande fluxo de pessoas e diferentes grupos sociais.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section id="contato" class="bg-orange-100 px-6 py-10 text-center rounded-xl mx-4 my-10">
+    <h3 class="text-2xl font-bold mb-2">Receba mais informações sobre esse tema.</h3>
+    <p class="text-gray-700 mb-4">Assine nossa página para não perder nenhuma novidade.</p>
+    <form class="flex flex-col sm:flex-row justify-center items-center gap-2">
+      <input type="email" placeholder="Seu e-mail" class="px-4 py-2 rounded-md border border-gray-300 w-full sm:w-64" required>
+      <button type="submit" class="px-4 py-2 bg-orange-600 text-white font-semibold rounded-md hover:bg-orange-500 w-full sm:w-auto">Inscrever</button>
+    </form>
+  </section>
+
+  <!-- Rodapé -->
+  <footer class="bg-gray-900 text-white px-6 py-8 text-sm">
+    <div class="flex flex-col md:flex-row justify-between gap-6">
+      <div>
+        <h4 class="font-bold text-orange-500 mb-2">CULTURA RURAL E URBANA</h4>
+        <p>&copy; 2025 João Daniel - Agrinho 2025.</p>
+      </div>
+      <div class="space-y-1">
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const menu = document.getElementById('menu');
+    const toggleTheme = document.getElementById('toggle-theme');
+    const body = document.getElementById('body');
+    const increaseText = document.getElementById('increase-text');
+
+    menuBtn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+
+    toggleTheme.addEventListener('click', () => {
+      body.classList.toggle('bg-white');
+      body.classList.toggle('bg-gray-900');
+      body.classList.toggle('text-gray-800');
+      body.classList.toggle('text-white');
+    });
+
+    increaseText.addEventListener('click', () => {
+      document.body.style.fontSize = 'larger';
+    });
+  </script>
+</body>
+</html>
